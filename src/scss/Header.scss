@@ -2,10 +2,8 @@
     position: relative;
     overflow: hidden;
     padding-top: 6rem;
-    padding-bottom: 17rem;
+    padding-bottom: 15rem;
     background-color: #370617;
-
-
     .ocean{
         height: 2%;
         width: 100%;
@@ -30,10 +28,9 @@
         }
     }
     .container{
-        height: fit-content;
+        min-height: 50vh;
         display: flex;
-        padding: 1rem;
-        margin-top: 3rem;
+        padding: 5vh 15vw;
         @media (max-width: 1000px) {
             flex-direction: column;
             gap: 5.5rem;
@@ -41,11 +38,14 @@
         justify-content: space-around;
         overflow: hidden;
         .headerText{
-            justify-content: center;
+            justify-content: left;
             align-items: center;
             text-align: left;
             display: flex;
             color: white;
+            @media(min-width: 1000px){
+                flex: 1;
+            }
             .text{
                 h1{
                     margin: 0;
@@ -91,6 +91,9 @@
             align-items: center;
             justify-content: center;
             display: flex;
+            @media(min-width: 1000px){
+                flex: 1;
+            }
         }
     }
 }

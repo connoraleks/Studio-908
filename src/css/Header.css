@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   padding-top: 6rem;
-  padding-bottom: 17rem;
+  padding-bottom: 15rem;
   background-color: #370617;
 }
 .header .ocean {
@@ -28,10 +28,9 @@
   opacity: 1;
 }
 .header .container {
-  height: fit-content;
+  min-height: 50vh;
   display: flex;
-  padding: 1rem;
-  margin-top: 3rem;
+  padding: 5vh 15vw;
   justify-content: space-around;
   overflow: hidden;
 }
@@ -42,11 +41,16 @@
   }
 }
 .header .container .headerText {
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   text-align: left;
   display: flex;
   color: white;
+}
+@media (min-width: 1000px) {
+  .header .container .headerText {
+    flex: 1;
+  }
 }
 .header .container .headerText .text h1 {
   margin: 0;
@@ -93,6 +97,11 @@
 @media (max-width: 1000px) {
   .header .container .headerImage {
     margin-top: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .header .container .headerImage {
+    flex: 1;
   }
 }
 

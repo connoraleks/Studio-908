@@ -16,7 +16,7 @@ const Header = () => {
                     </div>
                 </div> {/* end of col */}
                 <div className='headerImage'>
-                    <Gem style={{height:"100%", width:"100%", fill:"white"}}/>
+                    <Gem style={{height:"auto", width:"100%", fill:"white"}}/>
                 </div>
             </div> {/* end of container */}
         </div>
