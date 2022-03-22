@@ -16,7 +16,6 @@ const Navbar = () => {
                 </div>
                 <div className='offsiteLinks'>
                     <a href="https://twitter.com"><Twitter style={{width: "100%", height: "100%",fill: "white"}}/></a>
-                    <a href="https://twitter.com"><Twitter style={{width: "100%", height: "100%",fill: "white"}}/></a>
                 </div>
             </div>
             </div>
