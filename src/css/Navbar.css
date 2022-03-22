@@ -1,0 +1,57 @@
+nav {
+  height: fit-content;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #370617;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+nav .container {
+  width: 100%;
+  margin: 0 3rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .container .logo {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1rem;
+  text-decoration: none;
+}
+nav .container .links {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+nav .container .links .pageLinks {
+  padding: 0 1rem;
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+nav .container .links .pageLinks a {
+  color: #c5c3f0;
+  text-decoration: none;
+}
+nav .container .links .offsiteLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .container .links .offsiteLinks a {
+  height: 1.5rem;
+  width: 1.5rem;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Navbar.css.map */

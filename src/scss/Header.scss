@@ -1,0 +1,100 @@
+.header{
+    position: relative;
+    overflow: hidden;
+    padding-top: 6rem;
+    padding-bottom: 17rem;
+    background-color: #370617;
+
+
+    .ocean{
+        height: 2%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #ffffff;
+
+        .wave{
+            &:nth-of-type(2) {
+                top: -170px;
+                animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+                opacity: 1;
+            }
+            background: url(../assets/wave.svg) repeat-x;
+            position: absolute;
+            top: -190px;
+            width: 6400px;
+            height: 198px;
+            animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .container{
+        height: 50vh;
+        padding: 5rem;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        .headerText{
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            display: flex;
+            color: white;
+            .text{
+                h1{
+                    margin: 0;
+                    margin-bottom: 1rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-size: 2.5rem;
+                    line-height: 3.25rem;
+                    font-family: Poppins, sans-serif;
+                }
+                p{
+                    margin: 0;
+                    margin-bottom: 2rem;
+                    font-size: 1.125rem;
+                    line-height: 1.75rem;
+                }
+                a{
+                    width: fit-content;
+                    display: inline-block;
+                    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+                    border: 1px solid #9d0208;
+                    border-radius: 32px;
+                    background-color: #9d0208;
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-size: 0.875rem;
+                    line-height: 0;
+                    text-decoration: none;
+                    transition: all 0.2s;
+                }
+            }
+        }
+        .headerImage{
+        }
+    }
+}
+
+/* Wave Animation */
+@keyframes wave {
+	0% {
+		margin-left: 0;
+	}
+	100% {
+		margin-left: -1600px;
+	}
+}
+
+@keyframes swell {
+	0%, 100% {
+		transform: translate3d(0,-25px,0);
+	}
+	50% {
+		transform: translate3d(0,5px,0);
+	}
+}
+/* end of wave animation */
