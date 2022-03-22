@@ -13,23 +13,40 @@ nav {
 }
 nav .container {
   width: 100%;
-  margin: 0 3rem;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1000px) {
+  nav .container {
+    margin: 0 3rem;
+  }
+}
 nav .container .logo {
+  width: 100%;
   color: #ffffff;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1rem;
   text-decoration: none;
+  text-align: left;
+}
+@media (max-width: 1000px) {
+  nav .container .logo {
+    font-size: 1.5rem;
+    line-height: 0.5rem;
+  }
 }
 nav .container .links {
   flex: 1;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  nav .container .links {
+    display: none;
+  }
 }
 nav .container .links .pageLinks {
   padding: 0 1rem;
