@@ -1,7 +1,7 @@
 import '../css/Founders.css';
 const Founders = () => {
     return (
-        <div className="founder-container">
+        <div id="about" className="founder-container">
             <h3>The Founders</h3>
             <p>“Good programmers do programming not because they expect to<br/>get paid or get adulation by the public, but because it is fun to program.”<br />— Linus Torvalds, Software Engineer</p>
             <div className="founders">

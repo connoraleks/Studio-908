@@ -5,12 +5,10 @@ const Navbar = () => {
         <nav>
             <div className='container'>
             {/* Text Logo - Use this if you don't have a graphic logo */}
-            <a className="logo" href="index.html">Studio 908</a>
+            <a className="logo" href="#root">Studio 908</a>
             {/* Full navbar, horizontal if space available, vertical hidden if not (visibility triggered by above button) */}
             <div className="links">
                 <div className='pageLinks'>
-                    <a href="#details">Details</a>
-                    <a href="#features">Features</a>
                     <a  href="#about">About</a>
                     <a  href="#contact">Contact</a>
                 </div>
