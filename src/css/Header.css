@@ -31,17 +31,18 @@
   min-height: 50vh;
   display: flex;
   padding: 5vh 15vw;
+  gap: 5.5rem;
   justify-content: space-around;
+  align-items: center;
   overflow: hidden;
 }
 @media (max-width: 1000px) {
   .header .container {
     flex-direction: column;
-    gap: 5.5rem;
   }
 }
 .header .container .headerText {
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   text-align: left;
   display: flex;
@@ -50,6 +51,7 @@
 @media (min-width: 1000px) {
   .header .container .headerText {
     flex: 1;
+    justify-content: left;
   }
 }
 .header .container .headerText .text h1 {
@@ -88,20 +90,22 @@
   text-decoration: none;
   transition: all 0.2s;
 }
-.header .container .headerImage {
+.header .container .headerImage .image {
   justify-content: center;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 @media (max-width: 1000px) {
-  .header .container .headerImage {
+  .header .container .headerImage .image {
     margin-top: 1rem;
   }
 }
 @media (min-width: 1000px) {
   .header .container .headerImage {
     flex: 1;
+    width: 100%;
+    height: 100%;
   }
 }
 

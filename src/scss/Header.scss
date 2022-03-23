@@ -31,20 +31,22 @@
         min-height: 50vh;
         display: flex;
         padding: 5vh 15vw;
+        gap: 5.5rem;
         @media (max-width: 1000px) {
             flex-direction: column;
-            gap: 5.5rem;
         }
         justify-content: space-around;
+        align-items: center;
         overflow: hidden;
         .headerText{
-            justify-content: left;
+            justify-content: center;
             align-items: center;
             text-align: left;
             display: flex;
             color: white;
             @media(min-width: 1000px){
                 flex: 1;
+                justify-content: left;
             }
             .text{
                 h1{
@@ -84,15 +86,19 @@
             }
         }
         .headerImage{
-            @media (max-width: 1000px) {
-                margin-top: 1rem;
+            .image{
+                @media (max-width: 1000px) {
+                    margin-top: 1rem;
+                }
+                justify-content: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
             }
-            justify-content: center;
-            align-items: center;
-            justify-content: center;
-            display: flex;
             @media(min-width: 1000px){
                 flex: 1;
+                width: 100%;
+                height: 100%;
             }
         }
     }
