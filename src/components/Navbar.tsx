@@ -1,11 +1,12 @@
 import '../css/Navbar.css';
 import Twitter from './Twitter.tsx'
+import Gem from './Gem.tsx'
 const Navbar = () => {
     return (
         <nav>
             <div className='container'>
             {/* Text Logo - Use this if you don't have a graphic logo */}
-            <a className="logo" href="#root">Studio 908</a>
+            <a className="logo" href="#root"><Gem style={{marginBottom: "-0.15rem", height: "2.25rem", width: "2.25rem",fill: "white"}}/><div>Studio 908</div></a>
             {/* Full navbar, horizontal if space available, vertical hidden if not (visibility triggered by above button) */}
             <div className="links">
                 <div className='pageLinks'>

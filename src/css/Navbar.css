@@ -13,7 +13,7 @@ nav {
 }
 nav .container {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,10 @@ nav .container {
   }
 }
 nav .container .logo {
+  display: flex;
+  align-items: center;
   width: 100%;
+  gap: 0.5rem;
   color: #ffffff;
   font-weight: 600;
   font-size: 2rem;

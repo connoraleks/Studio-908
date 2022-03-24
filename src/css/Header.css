@@ -5,6 +5,11 @@
   padding-bottom: 15rem;
   background-color: #370617;
 }
+@media (max-width: 1000px) {
+  .header {
+    padding-top: 5rem;
+  }
+}
 .header .ocean {
   height: 2%;
   width: 100%;
@@ -39,6 +44,7 @@
 @media (max-width: 1000px) {
   .header .container {
     flex-direction: column;
+    gap: 3rem;
   }
 }
 .header .container .headerText {
@@ -53,6 +59,10 @@
     flex: 1;
     justify-content: left;
   }
+}
+.header .container .headerText .text {
+  display: flex;
+  flex-direction: column;
 }
 .header .container .headerText .text h1 {
   margin: 0;
@@ -78,8 +88,7 @@
 }
 .header .container .headerText .text a {
   width: fit-content;
-  display: inline-block;
-  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  padding: 1.5rem 2rem;
   border: 1px solid #9d0208;
   border-radius: 32px;
   background-color: #9d0208;
@@ -90,6 +99,11 @@
   text-decoration: none;
   transition: all 0.2s;
 }
+.header .container .headerText .text a:hover {
+  border: 2px solid #9d0208;
+  background-color: #ffffff;
+  color: #9d0208;
+}
 .header .container .headerImage .image {
   justify-content: center;
   align-items: center;
@@ -98,10 +112,10 @@
 }
 @media (max-width: 1000px) {
   .header .container .headerImage .image {
-    margin-top: 1rem;
+    display: none;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1050px) {
   .header .container .headerImage {
     flex: 1;
     width: 100%;
