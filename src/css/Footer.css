@@ -1,0 +1,26 @@
+.footer {
+  background-color: #370617;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.footer .footerText {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .footerText p {
+  flex: 1;
+  font-style: normal;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  color: #6b747b;
+}
+.footer .footerText p a {
+  color: #6b747b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Footer.css.map */

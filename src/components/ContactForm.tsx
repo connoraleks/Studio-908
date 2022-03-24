@@ -8,13 +8,13 @@ const ContactForm = () => {
                 <p>Use this form to tell us about you.</p>
                 <form>
                     <div className="form-group">
-                        <input type="text" className="form-control-input" id="cname" required />
+                        <input placeholder="Name" type="text" className="form-control-input" id="cname" required />
                     </div>
                     <div className="form-group">
-                        <input type="email" className="form-control-input" id="cemail" required />
+                        <input placeholder="Email" type="email" className="form-control-input" id="cemail" required />
                     </div>
                     <div className="form-group">
-                        <textarea className="form-control-textarea" id="cmessage" required defaultValue={""} />
+                        <textarea placeholder="Message" className="form-control-textarea" id="cmessage" required defaultValue={""} />
                     </div>
                     <div className="form-group">
                         <button type="submit" className="form-control-submit-button">Submit Message</button>

@@ -10,7 +10,7 @@ const Founders = () => {
                     <h6>Connor Aleks<br />Frontend Lead</h6>
                 </div>
                 <div className="founder">
-                    <img src={require("../assets/cole.jpeg")} alt="alternative" />
+                    <img src={require("../assets/cole.jpg")} alt="alternative" />
                     <h6>Cole Peterson<br />Backend Lead</h6>
                 </div>
             </div>

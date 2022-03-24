@@ -5,7 +5,8 @@
     padding-bottom: 15rem;
     background-color: #370617;
     @media (max-width: 1000px) {
-        padding-top: 5rem;
+        padding-top: 25vh;
+        padding-bottom: 20vh;
     }
     .ocean{
         height: 2%;
@@ -33,9 +34,10 @@
     .container{
         min-height: 50vh;
         display: flex;
-        padding: 5vh 15vw;
+        padding: 5vh 10vw;
         gap: 5.5rem;
         @media (max-width: 1000px) {
+            padding: 5vh 15vw;
             flex-direction: column;
             gap: 3rem;
         }
@@ -43,10 +45,7 @@
         align-items: center;
         overflow: hidden;
         .headerText{
-            justify-content: center;
-            align-items: center;
             text-align: left;
-            display: flex;
             color: white;
             @media(min-width: 1000px){
                 flex: 1;
@@ -55,6 +54,10 @@
             .text{
                 display: flex;
                 flex-direction: column;
+                @media(max-width: 1000px){
+                    align-items: center;
+                    text-align: center;
+                }
                 h1{
                     margin: 0;
                     margin-bottom: 1rem;

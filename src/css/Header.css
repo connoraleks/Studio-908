@@ -7,7 +7,8 @@
 }
 @media (max-width: 1000px) {
   .header {
-    padding-top: 5rem;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
   }
 }
 .header .ocean {
@@ -35,7 +36,7 @@
 .header .container {
   min-height: 50vh;
   display: flex;
-  padding: 5vh 15vw;
+  padding: 5vh 10vw;
   gap: 5.5rem;
   justify-content: space-around;
   align-items: center;
@@ -43,15 +44,13 @@
 }
 @media (max-width: 1000px) {
   .header .container {
+    padding: 5vh 15vw;
     flex-direction: column;
     gap: 3rem;
   }
 }
 .header .container .headerText {
-  justify-content: center;
-  align-items: center;
   text-align: left;
-  display: flex;
   color: white;
 }
 @media (min-width: 1000px) {
@@ -63,6 +62,12 @@
 .header .container .headerText .text {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .header .container .headerText .text {
+    align-items: center;
+    text-align: center;
+  }
 }
 .header .container .headerText .text h1 {
   margin: 0;
