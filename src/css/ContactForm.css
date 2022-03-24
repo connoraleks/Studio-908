@@ -25,6 +25,11 @@
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  #contact .form-container h2 {
+    font-size: 2rem;
+  }
+}
 #contact .form-container p {
   margin-bottom: 2.25rem;
   font-size: 1.25rem;
@@ -34,6 +39,11 @@
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  #contact .form-container p {
+    font-size: 1rem;
+  }
 }
 #contact .form-container form {
   padding: 1rem;

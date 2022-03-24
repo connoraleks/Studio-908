@@ -3,7 +3,7 @@ const Founders = () => {
     return (
         <div id="about" className="founder-container">
             <h3>The Founders</h3>
-            <p>“Good programmers do programming not because they expect to<br/>get paid or get adulation by the public, but because it is fun to program.”<br />— Linus Torvalds, Software Engineer</p>
+            <p>“Good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”<br />— Linus Torvalds, Software Engineer</p>
             <div className="founders">
                 <div className="founder">
                     <img src={require("../assets/connor.jpeg")} alt="alternative" />

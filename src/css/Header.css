@@ -92,6 +92,11 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+@media (max-width: 1000px) {
+  .header .container .headerText .text p {
+    font-size: 1rem;
+  }
+}
 .header .container .headerText .text a {
   width: fit-content;
   padding: 1.5rem 2rem;

@@ -21,6 +21,9 @@
             line-height: 2.375rem;
             font-family: "Open Sans", sans-serif;
             text-align: center;
+            @media(max-width: 1000px){
+                font-size: 2rem;
+            }
         }
         p{
             margin-bottom: 2.25rem;
@@ -31,6 +34,9 @@
             font-weight: 400;
             font-family: "Open Sans", sans-serif;
             text-align: center;
+            @media(max-width: 1000px){
+                font-size: 1rem;
+            }
         }
         form{
             padding: 1rem;

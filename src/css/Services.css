@@ -12,6 +12,11 @@
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .services-container h3 {
+    font-size: 2rem;
+  }
+}
 .services-container p {
   margin-bottom: 2.25rem;
   font-size: 1.25rem;
@@ -21,6 +26,11 @@
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   text-align: center;
+}
+@media (max-width: 1000px) {
+  .services-container p {
+    font-size: 1rem;
+  }
 }
 .services-container .tiles-container {
   padding: 1rem;
