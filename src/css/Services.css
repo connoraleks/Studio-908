@@ -1,0 +1,71 @@
+.services-container {
+  padding: 15vh 5vw;
+  background-color: white;
+}
+.services-container h3 {
+  margin: 0;
+  color: #370617;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 2.375rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.services-container p {
+  margin-bottom: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #6b747b;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.services-container .tiles-container {
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+@media (max-width: 1000px) {
+  .services-container .tiles-container {
+    flex-direction: column;
+  }
+}
+.services-container .tiles-container .tiles {
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #6b747b;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #f2f3fd;
+}
+.services-container .tiles-container .tiles .tile-header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.services-container .tiles-container .tiles .tile-header h4 {
+  margin: 0;
+  color: #370617;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.services-container .tiles-container .tiles p {
+  margin: 0;
+  color: #6b747b;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 2.375rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Services.css.map */

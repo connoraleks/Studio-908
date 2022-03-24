@@ -1,6 +1,6 @@
 import '../css/Navbar.css';
-import Twitter from './Twitter.tsx'
-import Gem from './Gem.tsx'
+import Twitter from './TwitterSVG.tsx'
+import Gem from './GemSVG.tsx'
 const Navbar = () => {
     return (
         <nav>
@@ -11,6 +11,7 @@ const Navbar = () => {
             <div className="links">
                 <div className='pageLinks'>
                     <a  href="#about">About</a>
+                    <a  href="#services">Services</a>
                     <a  href="#contact">Contact</a>
                 </div>
                 <div className='offsiteLinks'>

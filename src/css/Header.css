@@ -44,7 +44,8 @@
 }
 @media (max-width: 1000px) {
   .header .container {
-    padding: 5vh 12.5vw;
+    padding: 5vh 2vw;
+    padding-top: 2vh;
     flex-direction: column;
     gap: 3rem;
   }
@@ -81,7 +82,7 @@
 }
 @media (max-width: 1000px) {
   .header .container .headerText .text h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 2rem;
   }
 }
@@ -106,7 +107,7 @@
 }
 .header .container .headerText .text a:hover {
   border: 2px solid #9d0208;
-  background-color: #ffffff;
+  background-color: transparent;
   color: #9d0208;
 }
 .header .container .headerImage .image {
