@@ -44,7 +44,7 @@
 }
 @media (max-width: 1000px) {
   .header .container {
-    padding: 5vh 15vw;
+    padding: 5vh 12.5vw;
     flex-direction: column;
     gap: 3rem;
   }
