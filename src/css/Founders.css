@@ -52,18 +52,22 @@
   justify-content: center;
   gap: 5rem;
 }
-.founder-container .founders div img {
+.founder-container .founders .founder img {
   width: 110px;
   margin-bottom: 0.75rem;
   border-radius: 50%;
 }
-.founder-container .founders div h6 {
+.founder-container .founders .founder h6 {
+  text-align: center;
   color: #333333;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
   font-family: Poppins, sans-serif;
+}
+.founder-container .founders .founder h6 a {
+  color: black;
 }
 
 /*# sourceMappingURL=Founders.css.map */

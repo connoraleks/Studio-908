@@ -14,7 +14,7 @@ const ContactForm = () => {
                         <input placeholder="Email" type="email" className="form-control-input" id="cemail" required />
                     </div>
                     <div className="form-group">
-                        <textarea placeholder="Message" className="form-control-textarea" id="cmessage" required defaultValue={""} />
+                        <textarea placeholder="Message" className="form-control-textarea" id="cmessage" required />
                     </div>
                     <div className="form-group">
                         <button type="submit" className="form-control-submit-button">Submit Message</button>

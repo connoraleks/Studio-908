@@ -6,7 +6,7 @@ const Footer = () => {
                 <p>
                     Template by <a href="https://htmlrev.com/gemdev-product-website-html-template.html">htmlRev</a>
                 </p>
-                <p>React.js by <b>Connor Aleksandrowicz</b></p>
+                <p>React.js by <a href="https://connoraleks.com">Connor Aleksandrowicz</a></p>
             </div>
         </div>
     );

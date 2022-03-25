@@ -36,7 +36,7 @@
 .header .container {
   min-height: 50vh;
   display: flex;
-  padding: 5vh 10vw;
+  padding: 5vh 15vw;
   gap: 5.5rem;
   justify-content: space-around;
   align-items: center;
@@ -114,6 +114,9 @@
   border: 2px solid #9d0208;
   background-color: transparent;
   color: #9d0208;
+}
+.header .container .headerImage {
+  max-width: 30vw;
 }
 .header .container .headerImage .image {
   justify-content: center;

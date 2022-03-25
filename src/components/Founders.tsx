@@ -7,11 +7,11 @@ const Founders = () => {
             <div className="founders">
                 <div className="founder">
                     <img src={require("../assets/connor.jpeg")} alt="alternative" />
-                    <h6>Connor Aleks<br />Frontend Lead</h6>
+                    <h6><a href="https://connoraleks.com">Connor Aleks</a><br />Frontend Lead</h6>
                 </div>
                 <div className="founder">
                     <img src={require("../assets/cole.jpg")} alt="alternative" />
-                    <h6>Cole Peterson<br />Backend Lead</h6>
+                    <h6><a href="https://connoraleks.com">Cole Peterson</a><br />Backend Lead</h6>
                 </div>
             </div>
         </div>

@@ -34,7 +34,7 @@
     .container{
         min-height: 50vh;
         display: flex;
-        padding: 5vh 10vw;
+        padding: 5vh 15vw;
         gap: 5.5rem;
         @media (max-width: 1000px) {
             padding: 5vh 2vw;
@@ -103,6 +103,7 @@
             }
         }
         .headerImage{
+            max-width: 30vw;
             .image{
                 @media (max-width: 1000px) {
                     display: none;
