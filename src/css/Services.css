@@ -103,7 +103,7 @@
 @media (max-width: 500px) {
   .services-container .lightbox .lightboxContent {
     width: 85%;
-    height: 85%;
+    height: 80%;
   }
 }
 .services-container .lightbox .lightboxContent .lightboxNavbar {
