@@ -51,6 +51,10 @@ nav .container .links {
     display: none;
   }
 }
+nav .container .links a:hover {
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
 nav .container .links .pageLinks {
   height: 1.5rem;
   padding: 0 1rem;
@@ -63,6 +67,9 @@ nav .container .links .pageLinks {
 nav .container .links .pageLinks a {
   color: #c5c3f0;
   text-decoration: none;
+}
+nav .container .links .pageLinks a:active {
+  color: white;
 }
 nav .container .links .offsiteLinks {
   display: flex;

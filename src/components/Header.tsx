@@ -10,7 +10,7 @@ const Header = () => {
             <div className="container">
                 <div className="headerText">
                     <div className="text">
-                        <h1 className="">Bring your ideas to life.</h1>
+                        <h1>Bring your ideas to life.</h1>
                         <p style={{color: "#c5c3f0"}}>Studio 908 makes <strong>daunting</strong> projects <strong>simple</strong>.<br />Looking to get in touch?</p>
                         <a className="button" href="#contact">Contact Us</a>
                     </div>

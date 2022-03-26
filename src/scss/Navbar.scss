@@ -44,6 +44,10 @@ nav{
             @media (max-width: 1000px) {
                 display: none
             }
+            a:hover{
+                transition: all 0.2s;
+                transform: scale(1.05);
+            }
             .pageLinks{
                 height: 1.5rem;
                 padding: 0 1rem;
@@ -55,6 +59,9 @@ nav{
                 a{
                     color: #c5c3f0;
                     text-decoration: none;
+                }
+                a:active{
+                    color: white;
                 }
             }
             .offsiteLinks{
