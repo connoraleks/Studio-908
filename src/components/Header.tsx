@@ -1,5 +1,4 @@
 import '../css/Header.css'
-import Gem from "./GemSVG.tsx";
 import ThreeBox from './ThreeBox.tsx';
 import useWindowDimensions from '../hooks/WindowDimensions.ts';
 
