@@ -1,11 +1,16 @@
 import '../css/Header.css'
 import Gem from "./GemSVG.tsx";
+import ThreeBox from './ThreeBox.tsx';
 const Header = () => {
     return (
         <div className="header">
             <div className="ocean">
                 <div className="wave" />
                 <div className="wave" />
+                <div className="wave" />
+            </div>
+            <div className="galaxy">
+                <ThreeBox style={{height:"auto", width:"100%", fill:"white"}}/>
             </div>
             <div className="container">
                 <div className="headerText">

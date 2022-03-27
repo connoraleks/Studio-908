@@ -20,26 +20,40 @@
   background: #ffffff;
 }
 .header .ocean .wave {
+  z-index: 1000;
+  opacity: 100;
   background: url(../assets/wave.svg) repeat-x;
   position: absolute;
   top: -190px;
   width: 6400px;
   height: 198px;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
+}
+.header .ocean .wave:nth-of-type(1) {
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 }
 .header .ocean .wave:nth-of-type(2) {
   top: -170px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
+}
+.header .ocean .wave:nth-of-type(3) {
+  margin-top: 20vh;
+  background: #ffffff;
+  width: 100%;
+}
+.header .galaxy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .header .container {
   min-height: 50vh;
   display: flex;
   padding: 5vh 15vw;
-  gap: 5.5rem;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   overflow: hidden;
 }
 @media (max-width: 1000px) {
@@ -47,12 +61,14 @@
     padding: 5vh 2vw;
     padding-top: 2vh;
     flex-direction: column;
-    gap: 3rem;
   }
 }
 .header .container .headerText {
+  z-index: 10000;
   text-align: left;
   color: white;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 @media (min-width: 1000px) {
   .header .container .headerText {
@@ -116,24 +132,12 @@
   color: #9d0208;
 }
 .header .container .headerImage {
-  max-width: 30vw;
+  z-index: 10000;
+  flex: 1 1;
 }
-.header .container .headerImage .image {
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-@media (max-width: 1000px) {
-  .header .container .headerImage .image {
-    display: none;
-  }
-}
-@media (min-width: 1050px) {
+@media (max-width: 500px) {
   .header .container .headerImage {
-    flex: 1;
-    width: 100%;
-    height: 100%;
+    display: none;
   }
 }
 
