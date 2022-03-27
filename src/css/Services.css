@@ -67,89 +67,32 @@
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
-.services-container .tiles-container .tiles:hover {
-  background-color: transparent;
+.services-container .tiles-container .selected {
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #6b747b;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #f2f3fd;
+  animation: grow 5s;
 }
-.services-container .lightbox {
-  top: 0;
-  z-index: 10;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  left: 0;
-  backdrop-filter: blur(10px);
+.services-container .tiles-container .selected .tile-header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  animation: blur 0.2s;
+  gap: 1rem;
 }
-@media (max-width: 500px) {
-  .services-container .lightbox {
-    margin-top: 5vh;
-  }
-}
-.services-container .lightbox .lightboxContent {
-  padding: 1rem;
-  border: 1px solid #6b747b;
-  border-radius: 10px;
-  background-color: transparent;
-  width: 75%;
-  height: 75%;
-  animation: appear 0.2s;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 500px) {
-  .services-container .lightbox .lightboxContent {
-    width: 85%;
-    height: 80%;
-  }
-}
-.services-container .lightbox .lightboxContent .lightboxNavbar {
-  justify-content: left;
-  margin-bottom: 1rem;
-}
-@media (max-width: 500px) {
-  .services-container .lightbox .lightboxContent .lightboxNavbar {
-    margin-bottom: 2.5rem;
-  }
-}
-.services-container .lightbox .lightboxContent h1 {
+.services-container .tiles-container .selected .tile-header h4 {
   margin: 0;
   color: black;
   font-style: normal;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 2.375rem;
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
-@media (max-width: 1000px) {
-  .services-container .lightbox .lightboxContent h1 {
-    font-size: 2rem;
-  }
-}
-.services-container .lightbox .lightboxContent .lightboxBody {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.services-container .lightbox .lightboxContent .lightboxBody p {
-  margin-bottom: 2.25rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: #6b747b;
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-}
-@media (max-width: 1000px) {
-  .services-container .lightbox .lightboxContent .lightboxBody p {
-    font-size: 1rem;
-  }
+.services-container .tiles-container .tiles:hover {
+  background-color: transparent;
 }
 
 @keyframes appear {
@@ -158,6 +101,29 @@
   }
   100% {
     opacity: 100;
+  }
+}
+@keyframes grow {
+  0% {
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #6b747b;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #f2f3fd;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid #6b747b;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: red;
   }
 }
 @keyframes blur {

@@ -1,5 +1,6 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
+
 
 function Box(props) {
   const ref = useRef(null)
@@ -21,15 +22,17 @@ function Box(props) {
         {...props}
         ref={ref}
         onClick={(event) => click(!clicked)}>
-        <boxGeometry args={[props.size,props.size,props.size]} />
-        <meshPhongMaterial color={props.color} />
+        {props.mat}
+        {props.geom}
     </mesh>
   )
 }
 const ThreeBox = (props) =>{
+  const geom = useMemo(() => <boxGeometry args={[props.size,props.size,props.size]} />, [])
+  const mat = useMemo(() => <meshPhongMaterial color={props.color} />, [])
   const numBoxes = props.numBoxes;
   const boxes = [];
-  for(let i = 0; i < numBoxes; i++) boxes.push(<Box position={props.animate === false ? [0,0,0] : [(window.innerWidth/100) * (Math.random()-Math.random()), (window.innerHeight/100) * (Math.random()-Math.random()), 0]} size={props.size} color={props.color} animate={props.animate}/>)
+  for(let i = 0; i < numBoxes; i++) boxes.push(<Box position={props.animate === false ? [0,0,0] : [(window.innerWidth/100) * (Math.random()-Math.random()), (window.innerHeight/100) * (Math.random()-Math.random()), 0]} geom={geom} mat={mat} animate={props.animate}/>)
   return (
     <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 10] }}>
       <ambientLight intensity={0.5} />

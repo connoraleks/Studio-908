@@ -17,7 +17,7 @@
         background: #ffffff;
 
         .wave{
-            z-index: 1000;
+            z-index: 6;
             opacity: 100;
             &:nth-of-type(1) {
                 animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
@@ -28,6 +28,9 @@
             }
             &:nth-of-type(3) {
                 margin-top: 20vh;
+                @media (max-height: 500px) {
+                    margin-top: 50vh;
+                }
                 background: #ffffff;
                 width: 100%;
             }
@@ -45,6 +48,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 1;
     }
     .blur{
         position: absolute;
@@ -53,7 +57,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 100;
+        z-index: 5;
     }
     .container{
         
@@ -69,7 +73,7 @@
         align-items: stretch;
         overflow: hidden;
         .headerText{
-            z-index: 10000;
+            z-index: 9;
             text-align: left;
             color: white;
             margin-top: auto;
@@ -130,7 +134,7 @@
             }
         }
         .headerImage{
-            z-index: 10000;
+            z-index: 9;
             flex: 1 1;
             @media(max-width: 500px){
                 display: none;

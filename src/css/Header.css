@@ -20,7 +20,7 @@
   background: #ffffff;
 }
 .header .ocean .wave {
-  z-index: 1000;
+  z-index: 6;
   opacity: 100;
   background: url(../assets/wave.svg) repeat-x;
   position: absolute;
@@ -41,12 +41,18 @@
   background: #ffffff;
   width: 100%;
 }
+@media (max-height: 500px) {
+  .header .ocean .wave:nth-of-type(3) {
+    margin-top: 50vh;
+  }
+}
 .header .galaxy {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .header .blur {
   position: absolute;
@@ -55,7 +61,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 5;
 }
 .header .container {
   min-height: 50vh;
@@ -73,7 +79,7 @@
   }
 }
 .header .container .headerText {
-  z-index: 10000;
+  z-index: 9;
   text-align: left;
   color: white;
   margin-top: auto;
@@ -142,7 +148,7 @@
   color: #9d0208;
 }
 .header .container .headerImage {
-  z-index: 10000;
+  z-index: 9;
   flex: 1 1;
 }
 @media (max-width: 500px) {

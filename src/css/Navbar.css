@@ -9,7 +9,7 @@ nav {
   justify-content: flex-start;
   position: fixed;
   width: 100%;
-  z-index: 1030;
+  z-index: 10;
 }
 nav .container {
   width: 100%;
