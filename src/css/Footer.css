@@ -1,5 +1,5 @@
 .footer {
-  background-color: #370617;
+  background-color: black;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
@@ -15,10 +15,10 @@
   font-style: normal;
   font-size: 1rem;
   font-family: Poppins, sans-serif;
-  color: #6b747b;
+  color: #abb4bb;
 }
 .footer .footerText p a {
-  color: #6b747b;
+  color: #abb4bb;
   font-weight: bold;
   text-decoration: none;
 }

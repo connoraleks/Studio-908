@@ -1,39 +1,40 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 
-function Box(props: JSX.IntrinsicElements['mesh']) {
+function Box(props) {
   const ref = useRef(null)
-  const [hovered, hover] = useState(false)
   const [clicked, click] = useState(false)
-  const [directionX,setDirectionX] = useState(0.01);
-  const [directionY, setDirectionY] = useState(0.01);
+  const [directionX,setDirectionX] = useState((Math.random() < 0.5 ? -1 : 1)* 0.01);
+  const [directionY, setDirectionY] = useState((Math.random() < 0.5 ? -1 : 1) * 0.01);
 
   useFrame((state, delta) => {
     ref.current.rotation.x += 0.005; 
     ref.current.rotation.y += 0.005;
+    if(props.animate === false) return;
     ref.current.position.x += directionX;
     ref.current.position.y += directionY;
-    if(Math.abs(ref.current.position.x) > window.innerWidth/200) setDirectionX(directionX * -1);
-    if(Math.abs(ref.current.position.y) > window.innerHeight/200) setDirectionY(directionY * -1);
+    if(Math.abs(ref.current.position.x) > (window.innerWidth/100)) setDirectionX(directionX * -1);
+    if(Math.abs(ref.current.position.y) > (window.innerHeight/100)) setDirectionY(directionY * -1);
   })
   return (
     <mesh
         {...props}
         ref={ref}
-        onClick={(event) => click(!clicked)}
-        onPointerOver={(event) => hover(true)}
-        onPointerOut={(event) => hover(false)}>
-        <sphereGeometry args={[1]} />
-        <meshStandardMaterial color={hovered ? 'red' : 'blue'} />
+        onClick={(event) => click(!clicked)}>
+        <boxGeometry args={[props.size,props.size,props.size]} />
+        <meshPhongMaterial color={props.color} />
     </mesh>
   )
 }
 const ThreeBox = (props) =>{
+  const numBoxes = props.numBoxes;
+  const boxes = [];
+  for(let i = 0; i < numBoxes; i++) boxes.push(<Box position={props.animate === false ? [0,0,0] : [(window.innerWidth/100) * (Math.random()-Math.random()), (window.innerHeight/100) * (Math.random()-Math.random()), 0]} size={props.size} color={props.color} animate={props.animate}/>)
   return (
-    <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 5] }}>
-      <ambientLight />
-      <pointLight position={[0, 0, 2]} />
-      <Box position={[0, 0, 0]} />
+    <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 10] }}>
+      <ambientLight intensity={0.5} />
+      <spotLight position={[10, 10, 10]} angle={0.5} penumbra={0.25} />
+      {boxes}
     </Canvas>
   );
 }

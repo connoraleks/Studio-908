@@ -3,7 +3,7 @@ nav {
   padding: 1rem;
   box-sizing: border-box;
   margin: 0;
-  background-color: #370617;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -65,7 +65,7 @@ nav .container .links .pageLinks {
   align-items: center;
 }
 nav .container .links .pageLinks a {
-  color: #c5c3f0;
+  color: #abb4bb;
   text-decoration: none;
 }
 nav .container .links .pageLinks a:active {

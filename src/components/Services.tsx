@@ -36,7 +36,7 @@ const Services = () => {
                     setSelected([true, false, false])
                 }}>
                     <div className="tile-header">
-                        <LaptopSVG style={{height: "2.25rem", width: "2.25rem",fill: "#370617"}}/>
+                        <LaptopSVG style={{height: "2.25rem", width: "2.25rem",fill: "black"}}/>
                         <h4>Frontend</h4>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const Services = () => {
                     setSelected([false, true, false])
                 }}>
                     <div className="tile-header">
-                        <FlowSVG style={{height: "2.25rem", width: "2.25rem",fill: "#370617"}}/>
+                        <FlowSVG style={{height: "2.25rem", width: "2.25rem",fill: "black"}}/>
                         <h4>Backend</h4>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const Services = () => {
                     setSelected([false, false, true])
                 }}>
                     <div className="tile-header">
-                        <BlockSVG style={{height: "2.25rem", width: "2.25rem",fill: "#370617"}}/>
+                        <BlockSVG style={{height: "2.25rem", width: "2.25rem",fill: "black"}}/>
                         <h4>Web 3.0</h4>
                     </div>
                 </div>

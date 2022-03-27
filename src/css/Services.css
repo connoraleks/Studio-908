@@ -4,7 +4,7 @@
 }
 .services-container h3 {
   margin: 0;
-  color: #370617;
+  color: black;
   font-style: normal;
   font-weight: 600;
   font-size: 2.5rem;
@@ -59,7 +59,7 @@
 }
 .services-container .tiles-container .tiles .tile-header h4 {
   margin: 0;
-  color: #370617;
+  color: black;
   font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
@@ -117,7 +117,7 @@
 }
 .services-container .lightbox .lightboxContent h1 {
   margin: 0;
-  color: #370617;
+  color: black;
   font-style: normal;
   font-weight: 600;
   font-size: 2.5rem;

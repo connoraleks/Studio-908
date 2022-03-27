@@ -3,7 +3,7 @@
     overflow: hidden;
     padding-top: 6rem;
     padding-bottom: 15rem;
-    background-color: #370617;
+    background-color: black;
     @media (max-width: 1000px) {
         padding-top: 25vh;
         padding-bottom: 20vh;
@@ -46,7 +46,17 @@
         width: 100%;
         height: 100%;
     }
+    .blur{
+        position: absolute;
+        backdrop-filter: blur(10px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
     .container{
+        
         min-height: 50vh;
         display: flex;
         padding: 5vh 15vw;
@@ -90,6 +100,7 @@
                     }
                 }
                 p{
+                    color: #abb4bb;
                     margin: 0;
                     margin-bottom: 2rem;
                     font-size: 1.125rem;
