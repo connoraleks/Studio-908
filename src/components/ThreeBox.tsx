@@ -1,12 +1,11 @@
-import React, { useRef, useState, useMemo } from 'react'
+import React, { useRef, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 
 
 function Box(props) {
   const ref = useRef(null)
-  const [clicked, click] = useState(false)
-  const [directionX,setDirectionX] = useState((Math.random() < 0.5 ? -1 : 1)* 0.01);
-  const [directionY, setDirectionY] = useState((Math.random() < 0.5 ? -1 : 1) * 0.01);
+  let directionX = (Math.random() < 0.5 ? -1 : 1)* 0.01;
+  let directionY = (Math.random() < 0.5 ? -1 : 1)* 0.01;
 
   useFrame((state, delta) => {
     ref.current.rotation.x += 0.005; 
@@ -14,14 +13,14 @@ function Box(props) {
     if(props.animate === false) return;
     ref.current.position.x += directionX;
     ref.current.position.y += directionY;
-    if(Math.abs(ref.current.position.x) > (window.innerWidth/100)) setDirectionX(directionX * -1);
-    if(Math.abs(ref.current.position.y) > (window.innerHeight/100)) setDirectionY(directionY * -1);
+    if(Math.abs(ref.current.position.x) > (window.innerWidth/100)) directionX *= -1;
+    if(Math.abs(ref.current.position.y) > (window.innerHeight/100)) directionY *= -1;
   })
   return (
     <mesh
         {...props}
         ref={ref}
-        onClick={(event) => click(!clicked)}>
+        >
         {props.mat}
         {props.geom}
     </mesh>
