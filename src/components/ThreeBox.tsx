@@ -6,6 +6,8 @@ function Box(props) {
   const ref = useRef(null)
   let directionX = (Math.random() < 0.5 ? -1 : 1)* 0.01;
   let directionY = (Math.random() < 0.5 ? -1 : 1)* 0.01;
+  const geom = useMemo(() => <boxGeometry args={[props.size,props.size,props.size]} />, [])
+  const mat = useMemo(() => <meshPhongMaterial color={props.color} />, [])
 
   useFrame((state, delta) => {
     ref.current.rotation.x += 0.005; 
@@ -21,17 +23,15 @@ function Box(props) {
         {...props}
         ref={ref}
         >
-        {props.mat}
-        {props.geom}
+        {mat}
+        {geom}
     </mesh>
   )
 }
 const ThreeBox = (props) =>{
-  const geom = useMemo(() => <boxGeometry args={[props.size,props.size,props.size]} />, [])
-  const mat = useMemo(() => <meshPhongMaterial color={props.color} />, [])
   const numBoxes = props.numBoxes;
   const boxes = [];
-  for(let i = 0; i < numBoxes; i++) boxes.push(<Box position={props.animate === false ? [0,0,0] : [(window.innerWidth/100) * (Math.random()-Math.random()), (window.innerHeight/100) * (Math.random()-Math.random()), 0]} geom={geom} mat={mat} animate={props.animate}/>)
+  for(let i = 0; i < numBoxes; i++) boxes.push(<Box position={props.animate === false ? [0,0,0] : [(window.innerWidth/100) * (Math.random()-Math.random()), (window.innerHeight/100) * (Math.random()-Math.random()), 0]} color={props.color} size={props.size} animate={props.animate}/>)
   return (
     <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 10] }}>
       <ambientLight intensity={0.5} />
