@@ -12,9 +12,7 @@ const Header = () => {
                 <div className="wave" />
             </div>
             <div className="galaxy">
-                <ThreeBox style={{height:"auto", width:"100%"}} numBoxes={height*width/50000} size={0.5} color={'red'} animate={true}/>
-            </div>
-            <div className="blur">
+                <ThreeBox numBoxes={height*width/50000} size={0.5} color={'red'} animate={true}/>
             </div>
             <div className="container">
                 <div className="headerText">
@@ -25,7 +23,7 @@ const Header = () => {
                     </div>
                 </div> {/* end of col */}
                 <div className='headerImage'>
-                    <ThreeBox style={{height:"auto", width:"100%"}} numBoxes={1} size={5} color={'white'} animate={false}/>
+                    <ThreeBox numBoxes={1} size={5} color={'white'} animate={false}/>
                 </div>
             </div> {/* end of container */}
         </div>

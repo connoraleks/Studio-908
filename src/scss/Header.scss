@@ -43,21 +43,13 @@
         }
     }
     .galaxy{
+        filter: blur(10px);
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         z-index: 1;
-    }
-    .blur{
-        position: absolute;
-        backdrop-filter: blur(10px);
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 5;
     }
     .container{
         
