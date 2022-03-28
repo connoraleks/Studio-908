@@ -140,12 +140,19 @@
   color: #9d0208;
 }
 .header .container .headerImage {
+  height: 25rem;
+  width: 25rem;
+  margin-top: auto;
+  margin-bottom: auto;
   z-index: 9;
   flex: 1 1;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .header .container .headerImage {
-    display: none;
+    height: 5rem;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
