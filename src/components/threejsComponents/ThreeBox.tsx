@@ -5,7 +5,7 @@ function Cube(props) {
   const mesh = useRef(null);
   const [hovered, setHover] = useState(false)
   const [active, setActive] = useState(false)
-  const { viewport } = useThree()
+  const { viewport } = useThree();
   const [scale, setScale] = useState(viewport.width/5)
   useEffect(() =>{
     if(viewport.width < viewport.height) setScale(viewport.height/5);
@@ -28,7 +28,7 @@ function Cube(props) {
 
 export default function ThreeBox({color}) {
   return (
-    <Canvas>
+    <Canvas camera={{ fov: 25, near: 0.1, far: 1000, position: [0, 0, 5] }}>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Cube color={color}/>
