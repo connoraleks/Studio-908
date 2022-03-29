@@ -7,7 +7,6 @@ const Header = () => {
             <div className="ocean">
                 <div className="wave" />
                 <div className="wave" />
-                <div className="wave" />
             </div>
             <div className="container">
                 <div className="headerText">
