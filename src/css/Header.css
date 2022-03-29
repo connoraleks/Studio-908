@@ -56,6 +56,12 @@
   height: 100%;
   z-index: 1;
 }
+@media (min-width: 1000px) {
+  .header .galaxy {
+    padding-left: 35vw;
+    padding-bottom: 20vh;
+  }
+}
 .header .container {
   min-height: 50vh;
   display: flex;

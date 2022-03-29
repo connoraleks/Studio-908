@@ -43,6 +43,10 @@
         }
     }
     .galaxy{
+        @media (min-width: 1000px) {
+            padding-left: 35vw;
+            padding-bottom: 20vh;
+        }
         box-sizing: border-box;
         filter: blur(10px);
         position: absolute;

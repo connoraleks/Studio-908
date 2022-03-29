@@ -1,9 +1,7 @@
 import '../css/Header.css'
 import ThreeBox from './ThreeBox.tsx';
-import useWindowDimensions from '../hooks/WindowDimensions.ts';
 
 const Header = () => {
-    const { height, width } = useWindowDimensions();
     return (
         <div className="header">
             <div className="ocean">
@@ -12,7 +10,7 @@ const Header = () => {
                 <div className="wave" />
             </div>
             <div className="galaxy">
-                <ThreeBox/>
+                <ThreeBox color={'white'}/>
             </div>
             <div className="container">
                 <div className="headerText">
@@ -23,7 +21,7 @@ const Header = () => {
                     </div>
                 </div> {/* end of col */}
                 <div className='headerImage'>
-                    <ThreeBox/>
+                    <ThreeBox color={'#9d0208'}/>
                 </div>
             </div> {/* end of container */}
         </div>
