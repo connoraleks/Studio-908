@@ -43,7 +43,6 @@
         }
     }
     .container{
-        
         min-height: 50vh;
         display: flex;
         padding: 5vh 15vw;
@@ -55,6 +54,7 @@
             padding-top: 2vh;
             flex-direction: column;
             align-items: center;
+            gap: 3rem;
         }
         .headerText{
             z-index: 9;
