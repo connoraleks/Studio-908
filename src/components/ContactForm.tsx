@@ -3,6 +3,10 @@ import '../css/ContactForm.css'
 const ContactForm = () => {
     return (
         <div id="contact" className="contact">
+            <div className="ocean">
+                <div className="wave" />
+                <div className="wave" />
+            </div>
             <div className="form-container">
                 <h2>Contact details</h2>
                 <p>Use this form to tell us about you.</p>
