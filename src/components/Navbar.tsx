@@ -8,11 +8,10 @@ const Navbar = () => {
     const { height, width } = useWindowDimensions();
     const [background, setBackground] = useState('transparent')
     const listenScrollEvent = (event) => {
-        if (window.scrollY < height*0.55) {
+        if (window.scrollY < height*0.15) {
             return setBackground("transparent")
-        } else if (window.scrollY >= height*0.55) {
-            return setBackground("black")
         } 
+        else return setBackground("black");
     }
 
     useEffect(() => {

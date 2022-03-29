@@ -39,8 +39,7 @@
 .header .container {
   min-height: 50vh;
   display: flex;
-  padding: 5vh 15vw;
-  justify-content: space-around;
+  padding: 5vh 25vw;
   align-items: stretch;
   overflow: hidden;
 }
@@ -54,8 +53,8 @@
   }
 }
 .header .container .headerText {
+  flex: 0 0 90%;
   z-index: 9;
-  text-align: left;
   color: white;
   margin-top: auto;
   margin-bottom: auto;
@@ -67,6 +66,7 @@
   }
 }
 .header .container .headerText .text {
+  align-items: left;
   display: flex;
   flex-direction: column;
 }
@@ -78,12 +78,12 @@
 }
 .header .container .headerText .text h1 {
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-style: normal;
   font-weight: 600;
   font-stretch: normal;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
+  font-size: 5rem;
+  line-height: 5rem;
   font-family: Poppins, sans-serif;
 }
 @media (max-width: 1000px) {
@@ -96,8 +96,9 @@
   color: #abb4bb;
   margin: 0;
   margin-bottom: 2rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 300;
 }
 @media (max-width: 1000px) {
   .header .container .headerText .text p {
@@ -123,12 +124,13 @@
   color: #9d0208;
 }
 .header .container .headerImage {
+  float: right;
+  flex: 0 0 10%;
   height: 25rem;
   width: 25rem;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 9;
-  flex: 1 1;
 }
 @media (max-width: 1000px) {
   .header .container .headerImage {

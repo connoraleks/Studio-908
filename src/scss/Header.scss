@@ -37,8 +37,7 @@
     .container{
         min-height: 50vh;
         display: flex;
-        padding: 5vh 15vw;
-        justify-content: space-around;
+        padding: 5vh 25vw;
         align-items: stretch;
         overflow: hidden;
         @media (max-width: 1000px) {
@@ -49,8 +48,8 @@
             gap: 3rem;
         }
         .headerText{
+            flex: 0 0 90%;
             z-index: 9;
-            text-align: left;
             color: white;
             margin-top: auto;
             margin-bottom: auto;
@@ -59,6 +58,7 @@
                 justify-content: left;
             }
             .text{
+                align-items: left;
                 display: flex;
                 flex-direction: column;
                 @media(max-width: 1000px){
@@ -67,12 +67,12 @@
                 }
                 h1{
                     margin: 0;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
                     font-style: normal;
                     font-weight: 600;
                     font-stretch: normal;
-                    font-size: 2.5rem;
-                    line-height: 3.25rem;
+                    font-size: 5rem;
+                    line-height: 5rem;
                     font-family: Poppins, sans-serif;
                     @media (max-width: 1000px) {
                         font-size: 2rem;
@@ -83,8 +83,9 @@
                     color: #abb4bb;
                     margin: 0;
                     margin-bottom: 2rem;
-                    font-size: 1.125rem;
-                    line-height: 1.75rem;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    font-weight: 300;
                     @media(max-width: 1000px){
                         font-size: 1rem;
                     }
@@ -110,12 +111,13 @@
             }
         }
         .headerImage{
+            float: right;
+            flex: 0 0 10%;
             height: 25rem;
             width: 25rem;
             margin-top: auto;
             margin-bottom: auto;
             z-index: 9;
-            flex: 1 1;
             @media(max-width: 1000px){
                 height: 5rem;
                 width: 15rem;
