@@ -45,7 +45,7 @@
     .galaxy{
         @media (min-width: 1000px) {
             padding-left: 35vw;
-            padding-bottom: 20vh;
+            padding-bottom: 15vh;
         }
         box-sizing: border-box;
         filter: blur(10px);
@@ -61,14 +61,15 @@
         min-height: 50vh;
         display: flex;
         padding: 5vh 15vw;
+        justify-content: space-around;
+        align-items: stretch;
+        overflow: hidden;
         @media (max-width: 1000px) {
             padding: 5vh 2vw;
             padding-top: 2vh;
             flex-direction: column;
+            align-items: center;
         }
-        justify-content: space-around;
-        align-items: stretch;
-        overflow: hidden;
         .headerText{
             z-index: 9;
             text-align: left;
@@ -139,9 +140,7 @@
             flex: 1 1;
             @media(max-width: 1000px){
                 height: 5rem;
-                width: 10rem;
-                margin-left: auto;
-                margin-right: auto;
+                width: 15rem;
             }
         }
     }
