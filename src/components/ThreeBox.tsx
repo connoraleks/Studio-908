@@ -1,43 +1,32 @@
-import React, { useRef, useMemo } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import React, { useRef, useState } from 'react'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
 
-
-function Box(props) {
-  const ref = useRef(null)
-  let directionX = (Math.random() < 0.5 ? -1 : 1)* 0.01;
-  let directionY = (Math.random() < 0.5 ? -1 : 1)* 0.01;
-  const geom = useMemo(() => <boxGeometry args={[props.size,props.size,props.size]} />, [])
-  const mat = useMemo(() => <meshPhongMaterial color={props.color} />, [])
-
-  useFrame((state, delta) => {
-    ref.current.rotation.x += 0.005; 
-    ref.current.rotation.y += 0.005;
-    if(props.animate === false) return;
-    ref.current.position.x += directionX;
-    ref.current.position.y += directionY;
-    if(Math.abs(ref.current.position.x) > (window.innerWidth/100)) directionX *= -1;
-    if(Math.abs(ref.current.position.y) > (window.innerHeight/100)) directionY *= -1;
-  })
+function Cube(props) {
+  const mesh = useRef(null);
+  const [hovered, setHover] = useState(false)
+  const [active, setActive] = useState(false)
+  const { viewport } = useThree()
+  useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01))
   return (
     <mesh
-        {...props}
-        ref={ref}
-        >
-        {mat}
-        {geom}
+      {...props}
+      ref={mesh}
+      scale={(viewport.width / 5) * (active ? 1.5 : 1)}
+      onClick={(e) => setActive(!active)}
+      onPointerOver={(e) => setHover(true)}
+      onPointerOut={(e) => setHover(false)}>
+      <boxGeometry />
+      <meshStandardMaterial color={hovered ? 'hotpink' : '#9d0208'} />
     </mesh>
   )
 }
-const ThreeBox = (props) =>{
-  const numBoxes = props.numBoxes;
-  const boxes = [];
-  for(let i = 0; i < numBoxes; i++) boxes.push(<Box position={props.animate === false ? [0,0,0] : [(window.innerWidth/100) * (Math.random()-Math.random()), (window.innerHeight/100) * (Math.random()-Math.random()), 0]} color={props.color} size={props.size} animate={props.animate}/>)
+
+export default function App() {
   return (
-    <Canvas camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 0, 10] }}>
-      <ambientLight intensity={0.5} />
-      <spotLight position={[10, 10, 10]} angle={0.5} penumbra={0.25} />
-      {boxes}
+    <Canvas>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <Cube />
     </Canvas>
-  );
+  )
 }
-export default ThreeBox;
