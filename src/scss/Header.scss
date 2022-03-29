@@ -43,7 +43,9 @@
         }
     }
     .galaxy{
+        padding-top: 15vh;
         @media (min-width: 1000px) {
+            padding-top: 0;
             padding-left: 35vw;
             padding-bottom: 15vh;
         }
