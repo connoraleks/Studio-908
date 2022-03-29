@@ -1,6 +1,6 @@
 import '../css/Navbar.css';
-import Twitter from './TwitterSVG.tsx'
-import Gem from './GemSVG.tsx'
+import Twitter from './svgComponents/TwitterSVG.tsx'
+import Gem from './svgComponents/GemSVG.tsx'
 import { useState, useEffect } from 'react';
 import useWindowDimensions from '../hooks/WindowDimensions.ts';
 

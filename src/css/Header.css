@@ -46,24 +46,6 @@
     margin-top: 50vh;
   }
 }
-.header .galaxy {
-  padding-top: 15vh;
-  box-sizing: border-box;
-  filter: blur(10px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-@media (min-width: 1000px) {
-  .header .galaxy {
-    padding-top: 0;
-    padding-left: 35vw;
-    padding-bottom: 15vh;
-  }
-}
 .header .container {
   min-height: 50vh;
   display: flex;

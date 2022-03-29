@@ -1,5 +1,5 @@
 import '../css/Header.css'
-import ThreeBox from './ThreeBox.tsx';
+import ThreeBox from './threejsComponents/ThreeBox.tsx';
 
 const Header = () => {
     return (
@@ -8,9 +8,6 @@ const Header = () => {
                 <div className="wave" />
                 <div className="wave" />
                 <div className="wave" />
-            </div>
-            <div className="galaxy">
-                <ThreeBox color={'white'}/>
             </div>
             <div className="container">
                 <div className="headerText">
