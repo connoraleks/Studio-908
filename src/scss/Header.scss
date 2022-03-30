@@ -26,6 +26,12 @@
                 top: -170px;
                 animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
             }
+            &:nth-of-type(3) {
+                background-color: white;
+                height: 100%;
+                bottom: 0;
+                top: 0;
+            }
             background: url(../assets/wave.svg) repeat-x;
             position: absolute;
             top: -190px;
@@ -37,15 +43,17 @@
     .container{
         min-height: 50vh;
         display: flex;
-        padding: 5vh 25vw;
+        padding: 5vh 15vw;
         align-items: stretch;
         overflow: hidden;
         @media (max-width: 1000px) {
-            padding: 5vh 2vw;
+            padding: 5vh 15vw;
+        }
+        @media (max-width: 500px) {
+            padding: 5vh 2.5vw;
             padding-top: 2vh;
             flex-direction: column;
             align-items: center;
-            gap: 3rem;
         }
         .headerText{
             flex: 0 0 90%;
@@ -53,7 +61,7 @@
             color: white;
             margin-top: auto;
             margin-bottom: auto;
-            @media(min-width: 1000px){
+            @media(min-width: 500px){
                 flex: 1;
                 justify-content: left;
             }
@@ -61,7 +69,7 @@
                 align-items: left;
                 display: flex;
                 flex-direction: column;
-                @media(max-width: 1000px){
+                @media(max-width: 500px){
                     align-items: center;
                     text-align: center;
                 }
@@ -77,6 +85,7 @@
                     @media (max-width: 1000px) {
                         font-size: 2rem;
                         line-height: 2rem;
+                        margin-bottom: 1rem;
                     }
                 }
                 p{
@@ -88,6 +97,8 @@
                     font-weight: 300;
                     @media(max-width: 1000px){
                         font-size: 1rem;
+                        line-height: 1.15rem;
+                        margin-bottom: 1rem;
                     }
                 }
                 a{

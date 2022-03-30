@@ -36,20 +36,30 @@
   top: -170px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
 }
+.header .ocean .wave:nth-of-type(3) {
+  background-color: white;
+  height: 100%;
+  bottom: 0;
+  top: 0;
+}
 .header .container {
   min-height: 50vh;
   display: flex;
-  padding: 5vh 25vw;
+  padding: 5vh 15vw;
   align-items: stretch;
   overflow: hidden;
 }
 @media (max-width: 1000px) {
   .header .container {
-    padding: 5vh 2vw;
+    padding: 5vh 15vw;
+  }
+}
+@media (max-width: 500px) {
+  .header .container {
+    padding: 5vh 2.5vw;
     padding-top: 2vh;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
   }
 }
 .header .container .headerText {
@@ -59,7 +69,7 @@
   margin-top: auto;
   margin-bottom: auto;
 }
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .header .container .headerText {
     flex: 1;
     justify-content: left;
@@ -70,7 +80,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .header .container .headerText .text {
     align-items: center;
     text-align: center;
@@ -90,6 +100,7 @@
   .header .container .headerText .text h1 {
     font-size: 2rem;
     line-height: 2rem;
+    margin-bottom: 1rem;
   }
 }
 .header .container .headerText .text p {
@@ -103,6 +114,8 @@
 @media (max-width: 1000px) {
   .header .container .headerText .text p {
     font-size: 1rem;
+    line-height: 1.15rem;
+    margin-bottom: 1rem;
   }
 }
 .header .container .headerText .text a {

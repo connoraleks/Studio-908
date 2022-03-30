@@ -6,6 +6,7 @@ const ContactForm = () => {
             <div className="ocean">
                 <div className="wave" />
                 <div className="wave" />
+                <div className="wave" />
             </div>
             <div className="form-container">
                 <h2>Contact details</h2>
